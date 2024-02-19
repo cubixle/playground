@@ -1,0 +1,24 @@
+mode: set
+github.com/cubixle/lru/lru.go:11.31,17.2 1 1
+github.com/cubixle/lru/lru.go:19.40,21.9 2 1
+github.com/cubixle/lru/lru.go:21.9,23.3 1 0
+github.com/cubixle/lru/lru.go:25.2,25.14 1 1
+github.com/cubixle/lru/lru.go:25.14,27.3 1 0
+github.com/cubixle/lru/lru.go:29.2,29.15 1 1
+github.com/cubixle/lru/lru.go:32.38,34.9 2 1
+github.com/cubixle/lru/lru.go:34.9,39.23 3 1
+github.com/cubixle/lru/lru.go:39.23,46.4 4 1
+github.com/cubixle/lru/lru.go:48.3,48.9 1 1
+github.com/cubixle/lru/lru.go:51.2,52.23 2 0
+github.com/cubixle/lru/lru.go:68.22,70.2 1 1
+github.com/cubixle/lru/lru.go:72.37,73.19 1 1
+github.com/cubixle/lru/lru.go:73.19,78.3 3 1
+github.com/cubixle/lru/lru.go:80.2,85.39 5 1
+github.com/cubixle/lru/lru.go:88.50,97.2 3 1
+github.com/cubixle/lru/lru.go:99.32,100.14 1 1
+github.com/cubixle/lru/lru.go:100.14,102.3 1 0
+github.com/cubixle/lru/lru.go:104.2,108.17 4 1
+github.com/cubixle/lru/lru.go:108.17,110.3 1 0
+github.com/cubixle/lru/lru.go:113.29,116.2 2 1
+github.com/cubixle/lru/lru.go:118.24,120.18 2 1
+github.com/cubixle/lru/lru.go:120.18,123.3 2 1
