@@ -2,7 +2,7 @@
 
 This is a simple implementation of a Least Recently Used (LRU) Cache in Go.
 
-An LRU Cache will evict the oldest used key whenever the cache gets full.
+An LRU Cache will evict the oldest used key whenever the cache gets full and this one only accepts strings as values. However this could be change to support any type of data.
 
 Example usage
 ```go
