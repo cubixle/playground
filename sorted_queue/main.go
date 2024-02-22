@@ -1,6 +1,9 @@
 package queue
 
-import "sync"
+import (
+	"log"
+	"sync"
+)
 
 type Item struct {
 	ID       string
@@ -36,15 +39,21 @@ func (q *queue) Put(r *Item) bool {
 
 	q.queue = append(q.queue, r)
 
-	if len(q.queue) > 0 {
-		// sort the queue
-		for i := len(q.queue); i > 0; i-- {
-			if q.queue[i].Priority > q.queue[i-1].Priority {
-				q.queue[i] = q.queue[i-1]
-				q.queue[i-1] = q.queue[i]
-			}
+	qu := q.queue
+	i := 1
+	for i < len(qu) {
+		j := i
+		for j >= 1 && qu[j].Priority > qu[j-1].Priority {
+			tmp := qu[j-1]
+			qu[j-1] = qu[j]
+			qu[j] = tmp
+
+			j--
 		}
+		i++
 	}
+
+	q.queue = qu
 
 	return true
 }
@@ -66,4 +75,10 @@ func (q *queue) GetNext() *Item {
 	q.queue = q.queue[1:]
 
 	return r
+}
+
+func (q *queue) Display() {
+	for _, i := range q.queue {
+		log.Println(i)
+	}
 }

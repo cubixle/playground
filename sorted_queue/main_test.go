@@ -18,15 +18,18 @@ func TestQueue(t *testing.T) {
 		t.Fatal("didn't get a item")
 	}
 	if v.ID != "bbb" {
-		t.Fatal("id wasn't what we expected")
+		t.Fatalf("id wasn't what we expected bbb, got %s", v.ID)
 	}
+	v = q.GetNext()
 	if v.ID != "aaa" {
-		t.Fatal("id wasn't what we expected")
+		t.Fatalf("id wasn't what we expected aaa, got %s", v.ID)
 	}
+	v = q.GetNext()
 	if v.ID != "ccc" {
-		t.Fatal("id wasn't what we expected")
+		t.Fatalf("id wasn't what we expected ccc, got %s", v.ID)
 	}
+	v = q.GetNext()
 	if v.ID != "ddd" {
-		t.Fatal("id wasn't what we expected")
+		t.Fatalf("id wasn't what we expected ddd, got %s", v.ID)
 	}
 }
